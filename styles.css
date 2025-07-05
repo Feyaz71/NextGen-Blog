@@ -1,0 +1,164 @@
+/* overall page styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; /* setting nice clean font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* spacing between lines for better readibility */
+  background-color: #f9f9f9; /* light gray background */
+  color: #374151; /* dark bluish text color */
+}
+
+/* top bar where blog name and nav lives */
+header {
+  background: #1E3A8A; /* dark blue background */
+  color: #fff; /* white text */
+  padding: 1rem 0; /* vertical padding */
+  text-align: center; /* center the blog title and nav */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* little shadow under header */
+}
+
+/* Use Manufacturing Consent font for blog title */
+header h1 {
+  font-family: 'Manufacturing Consent', cursive;
+  font-size: 3rem;
+  color: #f4eaea; /* bright rose color */
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/* navigation links inside header */
+nav ul {
+  list-style: none; /* remove bullets from list */
+  padding: 0;
+  margin: 0;
+}
+
+/* horizontal nav items with spacing */
+nav ul li {
+  display: inline; /* keep nav items in one line */
+  margin: 0 15px; /* space left and right */
+}
+
+/* nav links style */
+nav ul li a {
+  color: #fff; /* white text color */
+  text-decoration: none; /* remove underline */
+  font-weight: bold;
+}
+
+/* main content wrapper */
+main {
+  padding: 20px;
+  max-width: 800px; /* keep blog centered and not too wide */
+  margin: auto; /* center align */
+}
+
+/* each post card look */
+.post {
+  background: #fff; /* white background */
+  padding: 25px;
+  margin-bottom: 40px; /* space between posts */
+  border-radius: 12px; /* round edges */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* light shadow */
+}
+
+/* main heading inside post */
+.post h2 {
+  color: #1E3A8A; /* dark blue */
+}
+
+/* subheading like each tip/step */
+.post h3 {
+  color: #10B981; /* green shade */
+  margin-top: 25px;
+}
+
+/* image inside post */
+.post img {
+  max-width: 100%; /* responsive image */
+  border-radius: 8px; /* round image edges */
+  margin-bottom: 20px;
+}
+
+/* small publish date text */
+.date {
+  font-size: 0.9rem;
+  color: #6B7280; /* grayish text */
+}
+
+/* quote block inside post */
+blockquote {
+  border-left: 4px solid #3B82F6; /* blue line on left */
+  padding-left: 12px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #1F2937; /* slightly darker gray text */
+}
+
+/* comments area below post */
+.comments-section {
+  margin-top: 30px;
+}
+
+/* comment box and textarea */
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* smooth edge */
+}
+
+/* comment button */
+.comment-form button {
+  padding: 10px 20px;
+  background: #F59E0B; /* orange yellow */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* button hover efect */
+.comment-form button:hover {
+  background: #D97706; /* darker orange on hover */
+}
+
+/* area where comments get shown */
+.comments {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-left: 2px solid #ccc;
+  color: #374151;
+}
+
+/* each single comment line */
+.comments p {
+  margin-bottom: 10px;
+}
+
+/* footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1E3A8A;
+  color: #fff;
+  margin-top: 60px;
+}
+
+/* reponsive styles for mobile and small screens */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block; /* stack nav items vertically */
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px; /* less padding on small screens */
+  }
+}
+
+
